@@ -97,7 +97,7 @@ async def init_db():
         port=DB_PORT,
         database=DB_NAME,
         min_size=1,
-        max_size=5
+        max_size=5,
         statement_cache_size=0 #ကို ဖြုတ်လိုက်ပြီး Query Performance ကို မြှင့်တင်ထားပါသည်[cite: 1]
     )
     print("✅ Connected to Supabase Pooler.")
